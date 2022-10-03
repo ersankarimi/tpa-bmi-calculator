@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+	font-size: 16px;
+	--main-white: #fafafa;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	box-sizing: border-box;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* HTML5 display-role reset for older browsers */
+header,
+section,
+a {
+	display: block;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	font: inherit;
+	cursor: pointer;
+	font-size: 100%; /* 1 */
+	margin: 0; /* 2 */
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Poppins", sans-serif;
+	background-color: var(--main-white);
+	color: #333333;
+}
+
+/* Start utility class */
+.flex-center-horizontal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-control {
+	display: flex;
+	flex-direction: column;
+	margin: 2em 0;
+}
+/* End utility class */
+
+/* Start header styles */
+header {
+	padding: 2rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2em;
+}
+
+header > h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+}
+
+header > p {
+	font-weight: 500;
+}
+
+/* End header styles */
+
+/* Start main styles */
+main {
+	width: 100%;
+	padding: 0.5em 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+form {
+	width: 100%;
+}
+
+input[type="number"] {
+	border: 1px solid #333333;
+	padding: 1em;
+	margin: 0.5em 0;
+	border-radius: 8px;
+}
+label {
+	font-weight: 500;
+}
+
+.btn-submit {
+	color: #fafafa;
+	border-radius: 8px;
+	padding: 0.5em 1em;
+	background-color: #6558f5;
+	font-weight: 600;
+}
+
+.btn-submit:hover {
+	-webkit-filter: brightness(0.9);
+	filter: brightness(0.9);
+}
+
+#result {
+	text-align: left;
+	margin-top: 2em;
+}
+#result > h2 {
+	font-weight: 500;
+	color: rgba(51, 51, 51, 0.9);
+	font-size: 1rem;
+}
+
+strong {
+	font-weight: 700;
+	color: rgba(51, 51, 51, 1);
+}
+
+/* End main styles */
+
+@media screen and (min-width: 768px) {
+	main {
+		margin: auto;
+		width: 80%;
+	}
+}
+@media screen and (min-width: 1024px) {
+	main {
+		width: 70%;
+	}
+	label {
+		font-size: 1.15rem;
+	}
+	#result > h2 {
+		font-size: 1.115rem;
+	}
+
+	.btn-submit {
+		font-size: 1.125rem;
+	}
+}
+@media screen and (min-width: 1280px) {
+	main {
+		width: 50%;
+	}
+}

@@ -8,6 +8,48 @@
 		<link rel="stylesheet" href="/assets/css/index.css" />
 	</head>
 	<body>
+		<header class="flex-center-vertical">
+			<h1>Check your BMI</h1>
+			<p>Enter your weight and height below to check your BMI results</p>
+		</header>
+
+		<main>
+			<form>
+				<div class="form-control">
+					<label for="weight">Put your weight in here (KG)</label>
+					<input
+						type="number"
+						min="0"
+						step="any"
+						name="weight"
+						id="weight"
+						placeholder="Input your weight"
+						required
+					/>
+				</div>
+				<div class="form-control">
+					<label for="height">Put your height in here (CM)</label>
+					<input
+						type="number"
+						min="0"
+						step="any"
+						name="height"
+						id="height"
+						placeholder="Input your height"
+						required
+					/>
+				</div>
+
+				<button type="submit" class="btn-submit">Calculate BMI</button>
+			</form>
+
+			<section id="result">
+				<h2>
+					Your BMI is <strong id="bmi-value">40</strong> which means You are
+					<strong id="bmi-category">Normal</strong>
+				</h2>
+			</section>
+		</main>
 		<script type="module" src="/assets/js/index.js"></script>
 	</body>
 </html>
